@@ -1,0 +1,99 @@
+1. Can you explain about any 5 aws s3 cli commands?
+
+a: aws s3 mb
+   aws s3 rm
+   aws s3 ls
+   aws s3 cp
+   aws s3 mv
+
+2. How do you protect data at rest in s3?
+
+a: You have to use AWS KMS service to encript the data at rest from the server side.
+   You have to use AWS DKS service to encript the data from the client side.
+   
+
+3. Explain when do you use CLB vs ALB vs NLB.
+
+a: ALB- layer 7, path based routing, attach WAF
+   NLB- layer 4, video streaming
+   CLB- legacy, doesn't support TG
+
+4. What is the difference between EBS, EFS and S3?
+
+a: EBS > a block storage
+       > not a stand alone storage
+       > fixed storage capacity
+       > used commonly for faster read and writes for your EC2 instance
+       > you have to create EFS to start using the volume
+   
+   EFS > in-built file system intelligence
+       > can be utilized for shated volumes
+       > accessed by multiple EC2 instances
+
+   S3  > an object storage
+       > stores static data
+       > great for storing logs
+
+5. *Types of EC2 instances?
+
+a: R- memory optimised
+   C- compute optimised
+   M- medium
+   I- storage optimised
+   G- GPU
+   T- burstable
+
+6. When do you use nested cloudformation templates and is there any specific policy that tou set?
+
+a: 
+
+7. Explain about any 5 cloudformation funtions.
+
+a: > Fn::Join
+   > Fn::Select
+   > Fn::FindInMap
+   > FN::Base64
+   > Ref
+
+8. Explain how DDoS attacks can be prevented using AWS.
+
+a: 
+
+9. How do you monitor Applications HTTP errors responses running on AWS?
+   (explain if application runs on EC2 vs LB)
+
+a: 
+
+10. Difference between Aurora vs RDS.
+
+a: Aurora > scales automatically
+          > faster
+          > costlier
+
+11. Suppose you have an application DB in RDS without any manual back-up (DB Snapshot). Your RDS-instance went to a failed state. What steps would you take right now and in the future?
+
+a: 
+
+12. ***[Hard]Explain in which scenario do you use SQS. 
+
+a: 
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+2021 Qsns I faced (Role : Data Engineering with Cloud):
+01. What is SAM
+02. What are limitations of Lambda functions
+03. Different types of queues in SQS
+04. How do you restrict few users and allow few users to access S3 bucket
+05. What is route 53 and when it is used
+06. How do you procure resources automatically  (they wanted to know abt cloud formation)
+07. What are the Imp things to be taken care while creating a VPC
+08. What is multipart upload in s3 and when does it come into picture
+09. Various s3 storage options and life cycle policies
+10. What is AWS Glue and components in Glue 
+11. Did you use RDS and which RDBMS was used in RDS
+12. Different EC2 types used in project.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
